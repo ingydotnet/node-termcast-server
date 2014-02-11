@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Termcast</title>
+  <title>PairUp Termcasts</title>
 
 
   <link rel="stylesheet" href="css/foundation.css" />
@@ -16,19 +16,18 @@
 
 </head>
 <body>
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>PairUp Termcasts</h2>
+      <p>Broadcast your PairUps!</p>
+      <hr />
+    </div>
+  </div>
 
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Termcast</h2>
-			<p>Broadcast your work!</p>
-			<hr />
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-6 columns">
+  <div class="row">
+    <div class="large-6 columns">
       <div id="is-streaming">
-        <h3>Streaming right now!</h3>
+        <h3>Streaming right now:</h3>
         <div class="row">
           <table id="streams-table">
             <thead>
@@ -43,33 +42,9 @@
           </table>
         </div>
       </div>
-      <div id="not-streaming">
-        <h3>No streams at this time. :(</h3>
-        <p>Or you can start streaming yourself!</p>
-        <pre>
-cpanm App::Termcast
-termcast --host termcast.jmay.me
-        </pre>
-      </div>
-		</div>
-
-		<div class="large-6 columns">
-			<h4>Features</h4>
-
-      <h5>libvterm</h5>
-      <p>This app is bundled with the libvterm library, which has plenty of awesome terminal emulation support and is wicked fast.</p>
-
-      <h5>256-color support</h5>
-
-      <p>Out of the box, thanks to the feature richness of libvterm, node-termcast-server will broadcast the colors very close to the way it looks in your terminal.</p>
-
-      <h5>Terminal Resizing in real-time</h5>
-
-      <p>The <a href="http://metacpan.org/module/App::Termcast">App::Termcast</a> client is good about sending resize signals to the server, so when you resize you terminal, you will see the terminal on the web resize in real-time, so there is no need to worry about the dimensions of your terminal!</p>
-
-
-		</div>
-	</div>
+      <div id="not-streaming"></div>
+    </div>
+  </div>
 
   <script>
   document.write('<script src=' +
