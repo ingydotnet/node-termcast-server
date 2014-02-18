@@ -1,8 +1,5 @@
-node_modules
 *.o
 *.lo
 *.la
 .libs
-/build
-/config.json
 npm-debug.log
